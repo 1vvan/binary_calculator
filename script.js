@@ -21,6 +21,8 @@ function addOperator(operator) {
 function clearCalculator() {
     const binaryInput = document.getElementById('binaryInput');
     const decimalResultInput = document.getElementById('decimalResult');
+    const baseResult = document.getElementById('baseResult');
+    baseResult.textContent = '';
     decimalResultInput.textContent = '';
     binaryInput.textContent = '';
     operatorSelected = false;
@@ -89,8 +91,9 @@ function convertToBase() {
 
     const base = prompt('Выберите систему счисления (от 2 до 16):');
     if (base >= 2 && base <= 16) {
+        const baseResult = document.getElementById('baseResult');
         const convertedResult = decimalResult.toString(base);
-        alert(convertedResult);
+        baseResult.innerHTML = `Результат перевода ${decimalResult} в систему счисления ${base}:<span>${convertedResult}</span>`;
     } else {
         alert('Некорректный выбор системы счисления');
     }
