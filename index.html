@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDZ</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <div class="wrapper">
+        <div class="container">
+            <div id="binaryInput"></div>
+            <div class="calc-btns">
+                <div class="numbers-btns">
+                    <button class="number-btn" onclick="addNumber(0)">0</button>
+                    <button class="number-btn" onclick="addNumber(1)">1</button>
+                </div>
+                <div class="operator-btns">
+                    <button class="operator-btn" onclick="addOperator('+')">+</button>
+                    <button class="operator-btn" onclick="addOperator('-')">-</button>
+                    <button class="operator-btn" onclick="addOperator('*')">x</button>
+                    <button class="operator-btn" onclick="addOperator('/')">÷</button>
+                </div>
+                <div class="result-btns">
+                    <button class="result-btn clear-btn" onclick="clearCalculator()">С</button>
+                    <button class="result-btn equals-btn" onclick="calculate()">=</button>
+                </div>
+            </div>
+            <button class="convert-btn" onclick="convertToDecimal()">Перевести в десятичную систему</button>
+            <div class="covertResult" id="decimalResult"></div>
+            <button class="convert-btn" onclick="convertToBase()">Перевести в выбранную систему</button>
+        </div>
+    </div> -->
+    <div class="wrapper">
+        <div class="container">
+            <div id="binaryInput"></div>
+            <div class="calc-btns">
+                <div class="numbers-btns">
+                    <button class="number-btn" onclick="addNumber(0)">0</button>
+                    <button class="number-btn" onclick="addNumber(1)">1</button>
+                </div>
+                <div class="operator-btns">
+                    <button class="operator-btn" onclick="addOperator('+')">+</button>
+                    <button class="operator-btn" onclick="addOperator('-')">-</button>
+                    <button class="operator-btn" onclick="addOperator('*')">x</button>
+                    <button class="operator-btn" onclick="addOperator('/')">÷</button>
+                </div>
+                <div class="result-btns">
+                    <button class="result-btn clear-btn" onclick="clearCalculator()">C</button>
+                    <button class="result-btn equals-btn" onclick="calculate()">=</button>
+                </div>
+            </div>
+            <button class="convert-btn" onclick="convertToDecimal()" id="convertToDecimalBtn" disabled>Перевести в
+                десятичную систему</button>
+            <div class="covertResult" id="decimalResult"></div>
+            <button class="convert-btn" onclick="convertToBase()" id="convertToBaseBtn" disabled>Перевести в выбранную систему</button>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
